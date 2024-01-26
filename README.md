@@ -17,6 +17,14 @@ import time
 </div>
 <br>
 <h1>Notably, the code imports modules from Django, email handling, database models, HTTP requests, SMTP (Simple Mail Transfer Protocol), and Celery for asynchronous task processing.</h1>
+<h2>Hosted In AWS Cloud</h2>
+<h1>Features</h1>
+<ul>
+  <li>Sends mail after successfull pollling that will done with the help of SMTPlib in python</li>
+  <li>Used celery to delay message task</li>
+  <li>Integrated with some Jvascript code to make web page more interactive</li>
+  <li>Data Will be fetched from an Restspi which was created </li>
+</ul>
 
 
 
