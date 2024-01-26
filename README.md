@@ -21,7 +21,7 @@ import time
 <h1>Features</h1>
 <ul>
   <li>Sends mail after successfull pollling that will done with the help of SMTPlib in python</li>
-  <li>Used celery to delay message task</li>
+  <li>Used celery to delay Mailing task</li>
   <li>Integrated with some Javascript code to make web page more interactive</li>
   <li>Data Will be fetched from an Restapi which was created </li>
 </ul>
