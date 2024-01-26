@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polls App</title>
+</head>
+<body>
+    <h1>Polls for Hiring</h1>
+
+    {% for poll in polls %}
+        <div class="poll">
+            <h2>{{ poll.question }}</h2>
+            <ul class="choices">
+                {% for choice in poll.choice_set.all %}
+                    <li class="choice">{{ choice.choice_text }}</li>
+                {% endfor %}
+            </ul>
+            <button onclick="submitVote('{{ poll.question }}')">Submit Vote</button>
+        </div>
+    {% endfor %}
+
+    <script>
+        function submitVote(pollName) {
+            // Handle the submission of votes using JavaScript
+            // You might want to use AJAX to send the data to your server
+            alert(`Vote submitted for ${pollName}`);
+        }
+    </script>
+</body>
+</html>
+
